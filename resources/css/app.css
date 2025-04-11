@@ -1,0 +1,44 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+    transition: all 0.2s ease !important;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+
+.Dropdown {
+    display:flex;
+}
+.Dropdown-Mobile {
+    display: none;
+}
+
+.menuList {
+    height: 0px;
+}
+
+@media screen and (max-width: 571px) {
+    .Dropdown {
+        display:none;
+    }
+    .Dropdown-Mobile {
+        display: flex;
+    }
+    .menuList {
+        height: auto;
+    }
+    .ContentMobile {
+        /* flex: 1; */
+        width: 96%;
+        height: 96%;
+    }
+}
